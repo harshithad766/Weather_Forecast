@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Weather Forecast Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that displays the current weather and a 5-day forecast for a given city.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you begin, ensure you have met the following requirements:
 
-### `npm start`
+- You have a Windows, macOS, or Linux machine.
+- You have a stable internet connection.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Step 1: Install Node.js
 
-### `npm test`
+1. **Download Node.js**: Go to the [Node.js official website](https://nodejs.org/) and download the LTS version for your operating system.
+2. **Install Node.js**: Run the downloaded installer and follow the prompts to complete the installation.
+3. **Verify Installation**:
+    - Open a terminal or command prompt.
+    - Type `node -v` and press Enter. You should see the Node.js version number.
+    - Type `npm -v` and press Enter. You should see the npm version number.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 2: Setup Environment Variables (Windows Only)
 
-### `npm run build`
+1. **Open System Properties**:
+    - Press `Windows + Pause/Break` or right-click on `This PC` and select `Properties`.
+    - Click on `Advanced system settings`.
+    - Click on `Environment Variables`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Add Node.js to PATH**:
+    - Under `System variables`, find the `Path` variable and select it. Click `Edit`.
+    - Click `New` and add the path to the directory where Node.js was installed (e.g., `C:\Program Files\nodejs\`).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Verify PATH Configuration**:
+    - Open a new command prompt and type `node -v` and `npm -v` to ensure they are recognized.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 3: Clone the Repository
 
-### `npm run eject`
+1. **Open a Terminal**: Open your preferred terminal or command prompt.
+2. **Navigate to the Desired Directory**: Use the `cd` command to navigate to the directory where you want to clone the repository.
+3. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Step 4: Install Project Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Install Dependencies**: Run the following command in your project directory:
+    ```sh
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 5: Start the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Start the Development Server**:
+    ```sh
+    npm start
+    ```
 
-## Learn More
+2. **Open the Application**: Open a web browser and go to `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Troubleshooting
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **'react-scripts' is not recognized**:
+    - Ensure you are in the correct project directory.
+    - Run `npm install react-scripts --save` to install `react-scripts`.
 
-### Code Splitting
+- **Error: Cannot find module '...'**:
+    - Ensure all dependencies are installed by running `npm install` again.
+    - Check `package.json` to ensure all necessary packages are listed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+Once the application is running, you can:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Enter a city name in the search bar to get the current weather and a 5-day forecast for that city.
+- The application will automatically detect your location and display the weather forecast for your city on initial load.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
